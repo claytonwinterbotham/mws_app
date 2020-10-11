@@ -1,0 +1,13 @@
+.passwordInputWrapper {
+    position: relative;
+}
+  
+.passwordInputWrapper__icon {
+    position: absolute;
+    top: 22%;
+    right: 3%;
+}
+
+.passwordInputWrapper__icon:hover {
+    cursor: pointer;
+}

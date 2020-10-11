@@ -1,0 +1,56 @@
+{
+  "name": "mws_app",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:5000",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/pro-light-svg-icons": "^5.13.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@tailwindcss/ui": "^0.3.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "autoprefixer": "^9.8.0",
+    "axios": "^0.19.2",
+    "postcss-cli": "^7.1.1",
+    "react": "^16.13.1",
+    "react-avatar": "^3.9.7",
+    "react-color": "^2.18.1",
+    "react-dom": "^16.13.1",
+    "react-hook-form": "^5.7.2",
+    "react-icons": "^3.10.0",
+    "react-loading-skeleton": "^2.1.1",
+    "react-minimal-pie-chart": "^8.0.1",
+    "react-query": "2.13.1",
+    "react-query-devtools": "^2.4.7",
+    "react-recaptcha-v3": "^2.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-tiny-link": "^3.5.0",
+    "tailwindcss": "^1.4.6",
+    "use-deep-compare-effect": "^1.4.0"
+  },
+  "scripts": {
+    "build:style": "tailwind build src/styles/index.css -o src/styles/tailwind.css",
+    "start": "npm run build:style && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
