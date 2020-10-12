@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { AuthContext } from './_context/auth'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import { PrivateRoute } from './_components'
+import { PrivateRoute, Navbar, Footer } from './_components'
 import HomePage from './HomePage'
 import RegisterPage from './RegisterPage'
 import LoginPage from './LoginPage'
@@ -10,9 +10,10 @@ import EditProfilePage from './EditProfilePage'
 import ForgotPasswordPage from './ForgotPasswordPage'
 import ResetPasswordPage from './ResetPasswordPage'
 import PostsPage from './PostsPage'
+import PrivacyPage from './PrivacyPage'
+import TermsPage from './TermsPage'
 import { FavPostPage } from './ProfilePage/favPosts'
 import { MyPostPage } from './ProfilePage/myPosts'
-import { Navbar } from './_components'
 import { loadReCaptcha } from 'react-recaptcha-v3'
 import { ReactQueryDevtools } from 'react-query-devtools'
 import axios from 'axios'
@@ -55,6 +56,8 @@ const App = () => {
             <Route path="/login" component={LoginPage} />
             <Route path="/forgotpassword" component={ForgotPasswordPage} />
             <Route path="/resetpassword" component={ResetPasswordPage} />
+            <Route path="/privacy" component={PrivacyPage} />
+            {/* <Route path="/terms" component={TermsPage} /> */}
             <PrivateRoute path="/posts/:category" component={PostsPage} />
             <PrivateRoute path="/profile" component={ProfilePage} />
             <PrivateRoute path="/editprofile" component={EditProfilePage} />
@@ -62,6 +65,7 @@ const App = () => {
             <PrivateRoute path="/favpost" component={FavPostPage} />
           </Switch>
         </div>
+        <Footer />
         <ReactQueryDevtools />
       </BrowserRouter>
     </AuthContext.Provider>

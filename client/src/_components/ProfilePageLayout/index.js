@@ -32,7 +32,7 @@ export const ProfilePageLayout = ({children}) => {
                 </button>
               </div>
               <div className="flex-shrink-0 flex items-center px-4">
-                <img className="mr-auto h-6 w-auto" src="https://res.cloudinary.com/dy3c6sc72/image/upload/v1602530946/my_whole_self/mhs_logo_kjmhdf.svg" alt="Workflow" />
+                <img className="mr-auto h-6 w-auto" src="https://res.cloudinary.com/dy3c6sc72/image/upload/v1602540038/my_whole_self/mhs_logo_xgr5ww.svg" alt="Workflow" />
               </div>
               <div className="mt-5 flex-1 h-0 overflow-y-auto">
                 <nav className="px-4 space-y-1">

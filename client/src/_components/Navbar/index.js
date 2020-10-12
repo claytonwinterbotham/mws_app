@@ -26,7 +26,7 @@ export const Navbar = ({ fixed }) => {
             <Link
               to="/"
             >
-            <img className="mx-auto h-8 w-auto" src="https://res.cloudinary.com/dy3c6sc72/image/upload/v1602530946/my_whole_self/mhs_logo_kjmhdf.svg" alt="Workflow" />
+            <img className="mx-auto h-8 w-auto" src="https://res.cloudinary.com/dy3c6sc72/image/upload/v1602540038/my_whole_self/mhs_logo_xgr5ww.svg" alt="Workflow" />
             </Link>
           </div>
           <div

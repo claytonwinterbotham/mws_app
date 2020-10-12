@@ -16,7 +16,7 @@ export const Hero = (props) => {
           </div>
 
           <main className="mt-10 mx-auto max-w-screen-xl px- sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-            <div className="sm:text-center lg:text-left">
+            <div className="sm:text-center pl-6 lg:text-left">
               <h2 className="text-4xl mr-2 tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
                 Looking after 
                 <br />
@@ -32,7 +32,7 @@ export const Hero = (props) => {
         </div>
       </div>
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <img className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://res.cloudinary.com/dy3c6sc72/image/upload/v1602535873/my_whole_self/shutterstock_671522017_rr1mnf.jpg" alt=""/>
+        <img className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://res.cloudinary.com/dy3c6sc72/image/upload/v1602539571/my_whole_self/hero_bg_z6qkfg.jpg" alt=""/>
       </div>
     </div>
   )
