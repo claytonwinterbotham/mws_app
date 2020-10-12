@@ -10,7 +10,7 @@ import axios from 'axios'
 import { useQuery } from 'react-query'
 import { Modal, Pagination } from '../_components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlusCircle } from '@fortawesome/pro-light-svg-icons'
+import { faPencil } from '@fortawesome/pro-light-svg-icons'
 import MobilePostFormContainer from './mobilePostFormContainer'
 import { useAuth } from '../_context/auth'
 
@@ -20,7 +20,8 @@ const PostsPage = () => {
   const [page, setPage] = useState(1)
   const [showModal, setShowModal] = useState(false)
   const [showMobilePostForm, setShowMobilePostForm] = useState(false)
-  const { category } = useParams() //get category from url
+  let { category } = useParams() //get category from url
+  category = category.toLowerCase()
   const { authUser, } = useAuth()
 
   const postsCountQuery = useQuery(["posts", category],  async () => {
@@ -62,7 +63,7 @@ const PostsPage = () => {
               <div className="flex-1 flex flex-col overflow-y-auto">
                 <nav className="flex-1 px-5 py-4 space-y-1">
                   <span className="flex-center rounded-lg shadow-sm">
-                    <button onClick={toggleModal} type="button" className="w-full inline-flex items-center justify-center mt-12 px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150">
+                    <button onClick={toggleModal} type="button" className="w-full inline-flex items-center justify-center mt-12 px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-orange-300 hover:bg-orange-400 focus:outline-none focus:border-orange-600 focus:shadow-outline-orange active:bg-orange-600 transition ease-in-out duration-150">
                       New Post
                     </button>
                   </span>
@@ -76,8 +77,8 @@ const PostsPage = () => {
         <div className="flex flex-col w-0 flex-1 overflow-hidden">
 
           {/* Start show mobile add post form */}
-          <button onClick={toggleMobilePostForm} className="absolute z-10 right-12  bottom-8 mb-16 h-22 w-22 shadow-xl bg-teal-100 rounded-full text-teal-500 focus:outline-none focus:bg-teal-200 focus:text-teal-600 md:hidden" aria-label="Open sidebar">
-            <FontAwesomeIcon size="4x" icon={faPlusCircle} />
+          <button onClick={toggleMobilePostForm} className="absolute z-10 right-12  bottom-8 mb-16 h-24 w-24 shadow-xl bg-orange-300 rounded-full  focus:outline-none focus:bg-orange-400 md:hidden" aria-label="Open sidebar">
+            <FontAwesomeIcon size="3x" icon={faPencil} />
           </button>
           {/* End show mobile add post form */}
 
@@ -91,8 +92,10 @@ const PostsPage = () => {
                   <svg className="flex-shrink-0 mx-2 h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"></path>
                   </svg>
-                  <Link to={`/posts/${category}`}  className="text-gray-500 hover:text-gray-700 focus:outline-none focus:underline transition duration-150 ease-in-out">
-                    {helpers.capitalize(category)}
+                  <Link to={`/posts/${category}`}  className='text-gray-500 hover:text-gray-700 focus:outline-none focus:underline transition duration-150 ease-in-out'>
+                    <span className={`inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium leading-5 ${helpers.setCategoryColor(category)} `}>
+                          {helpers.capitalize(category)}
+                    </span>
                   </Link>
                 </nav>
 

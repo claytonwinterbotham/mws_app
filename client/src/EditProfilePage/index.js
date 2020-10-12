@@ -168,7 +168,7 @@ const EditProfilePage = () => {
           <div className="mt-8 border-t border-gray-200 pt-5">
             <div className="flex justify-end">
               <span className="ml-3 inline-flex rounded-md shadow-sm">
-                <button type="submit" className="inline-flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out">
+                <button type="submit" className="w-full inline-flex items-center justify-center mt-12 px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-orange-300 hover:bg-orange-400 focus:outline-none focus:border-orange-600 focus:shadow-outline-orange active:bg-orange-600 transition ease-in-out duration-150">
                   Save
                 </button>
               </span>

@@ -8,11 +8,48 @@ export const Pie = (props) => {
   const [hovered, setHovered] = useState(undefined)
 
   const data = props.data.map((entry, i) => {
-    if (hovered === i) {
-      return {
-        ...entry,
-        color: '#D15A7C',
-      };
+    // if (hovered === i) {
+    //   console.log(i, entry)
+    //   return {
+    //     ...entry,
+    //     color: '#D15A7C',
+    //   };
+    // }
+    if(hovered === i){
+      switch(i){
+        case 0:
+          return{
+            ...entry,
+            color: '#E3A008',
+          }
+        case 1:
+          return{
+            ...entry,
+            color: '#AC94FA',
+          }
+        case 2:
+          return{
+            ...entry,
+            color: '#F17EB8',
+          }
+        case 3:
+          return{
+            ...entry,
+            color: '#31C48D',
+          }
+        case 4:
+          return{
+            ...entry,
+            color: '#F98080',
+          }
+        case 5:
+          return{
+            ...entry,
+            color: '#16BDCA',
+          }
+        default:
+          return null  
+      }
     }
     return entry;
   })

@@ -23,36 +23,36 @@ export const ProfilePageLayout = ({children}) => {
               <div className="absolute inset-0 bg-gray-600 opacity-75"></div>
             </div>
          
-            <div className="relative flex-1 flex flex-col max-w-xs w-full pt-5 pb-4 bg-white">
+            <div className="relative flex-1 flex flex-col max-w-xs w-full pt-5 pb-4 bg-white  border-r border-gray-200">
               <div className="absolute top-0 right-0 p-1">
-                <button onClick={toggleMobileProfileMenu} className="flex items-center justify-center h-12 w-12 rounded-full focus:outline-none focus:bg-teal-200" aria-label="Close sidebar">
+                <button onClick={toggleMobileProfileMenu} className="flex items-center justify-center h-12 w-12 rounded-full focus:outline-none focus:bg-orange-200" aria-label="Close sidebar">
                   <svg className="h-6 w-6 text-black" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                   </svg>
                 </button>
               </div>
               <div className="flex-shrink-0 flex items-center px-4">
-                <p>My Whole Self</p>
+                <img className="mr-auto h-6 w-auto" src="https://res.cloudinary.com/dy3c6sc72/image/upload/v1602530946/my_whole_self/mhs_logo_kjmhdf.svg" alt="Workflow" />
               </div>
               <div className="mt-5 flex-1 h-0 overflow-y-auto">
                 <nav className="px-4 space-y-1">
-                  <span className="flex-center rounded-lg shadow-sm">
-                    <Link to="/profile" className="w-full inline-flex items-center justify-center mt-12 px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150">
+                  <span className="flex-center rounded-lg">
+                    <Link to="/profile" className="w-full inline-flex items-center justify-center mt-12 px-4 py-2 border border-transparent text-lg leading-5 font-medium rounded-md hover:bg-orange-400 focus:outline-none focus:border-orange-700 focus:shadow-outline-orange active:bg-orange-400 transition ease-in-out duration-150">
                       My Profile
                     </Link>
                   </span>
-                  <span className="flex-center rounded-lg shadow-sm">
-                    <Link to="/editprofile" className="w-full inline-flex items-center justify-center mt-12 px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150">
+                  <span className="flex-center rounded-lg">
+                    <Link to="/editprofile" className="w-full inline-flex items-center justify-center mt-12 px-4 py-2 border border-transparent text-lg leading-5 font-medium rounded-md hover:bg-orange-400 focus:outline-none focus:border-orange-700 focus:shadow-outline-orange active:bg-orange-400 transition ease-in-out duration-150">
                       Edit Profile
                     </Link>
                   </span>
-                  <span className="flex-center rounded-lg shadow-sm">
-                    <Link to="/mypost" className="w-full inline-flex items-center justify-center mt-12 px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150">
+                  <span className="flex-center rounded-lg">
+                    <Link to="/mypost" className="w-full inline-flex items-center justify-center mt-12 px-4 py-2 border border-transparent text-lg leading-5 font-medium rounded-md hover:bg-orange-400 focus:outline-none focus:border-orange-700 focus:shadow-outline-orange active:bg-orange-400 transition ease-in-out duration-150">
                       My Posts
                     </Link>
                   </span>
-                  <span className="flex-center rounded-lg shadow-sm">
-                    <Link to="/favpost" className="w-full inline-flex items-center justify-center mt-12 px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150">
+                  <span className="flex-center rounded-lg">
+                    <Link to="/favpost" className="w-full inline-flex items-center justify-center mt-12 px-4 py-2 border border-transparent text-lg leading-5 font-medium rounded-md hover:bg-orange-400 focus:outline-none focus:border-orange-700 focus:shadow-outline-orange active:bg-orange-400 transition ease-in-out duration-150">
                       My Favourite Posts
                     </Link>
                   </span>
@@ -71,23 +71,23 @@ export const ProfilePageLayout = ({children}) => {
           <div className="flex flex-col h-0 flex-1 border-r border-gray-200 bg-white">
             <div className="flex-1 flex flex-col overflow-y-auto">
               <nav className="flex-1 px-5 py-4 space-y-1">
-                <span className="flex-center rounded-lg shadow-sm">
-                  <Link to="/profile" className="w-full inline-flex items-center justify-center mt-12 px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150">
+                <span className="flex-center rounded-lg">
+                  <Link to="/profile" className="w-full inline-flex items-center justify-center mt-12 px-4 py-2 border border-transparent text-lg leading-5 font-medium rounded-md hover:bg-orange-400 focus:outline-none focus:border-orange-700 focus:shadow-outline-orange active:bg-orange-400 transition ease-in-out duration-150">
                     My Profile
                   </Link>
                 </span>
-                <span className="flex-center rounded-lg shadow-sm">
-                  <Link to="/editprofile" className="w-full inline-flex items-center justify-center mt-12 px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150">
+                <span className="flex-center rounded-lg">
+                  <Link to="/editprofile" className="w-full inline-flex items-center justify-center mt-12 px-4 py-2 border border-transparent text-lg leading-5 font-medium rounded-md hover:bg-orange-400 focus:outline-none focus:border-orange-700 focus:shadow-outline-orange active:bg-orange-400 transition ease-in-out duration-150">
                     Edit Profile
                   </Link>
                 </span>
-                <span className="flex-center rounded-lg shadow-sm">
-                  <Link to="/mypost" className="w-full inline-flex items-center justify-center mt-12 px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150">
+                <span className="flex-center rounded-lg">
+                  <Link to="/mypost" className="w-full inline-flex items-center justify-center mt-12 px-4 py-2 border border-transparent text-lg leading-5 font-medium rounded-md hover:bg-orange-400 focus:outline-none focus:border-orange-700 focus:shadow-outline-orange active:bg-orange-400 transition ease-in-out duration-150">
                     My Posts
                   </Link>
                 </span>
-                <span className="flex-center rounded-lg shadow-sm">
-                  <Link to="/favpost" className="w-full inline-flex items-center justify-center mt-12 px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150">
+                <span className="flex-center rounded-lg">
+                  <Link to="/favpost" className="w-full inline-flex items-center justify-center mt-12 px-4 py-2 border border-transparent text-lg leading-5 font-medium rounded-md hover:bg-orange-400 focus:outline-none focus:border-orange-700 focus:shadow-outline-orange active:bg-orange-400 transition ease-in-out duration-150">
                     My Favourite Posts
                   </Link>
                 </span>

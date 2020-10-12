@@ -65,7 +65,7 @@ const LoginPage = (props) => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <img className="mx-auto h-12 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg" alt="Workflow" />
+        <img className="mx-auto h-12 w-auto" src="https://res.cloudinary.com/dy3c6sc72/image/upload/v1602532535/my_whole_self/logo_no_text_mtojk1.svg" alt="Workflow" />
         <h2 className="mt-6 text-center text-3xl leading-9 font-extrabold text-gray-900">
           Login
         </h2>
@@ -122,12 +122,12 @@ const LoginPage = (props) => {
 
             <div className="mt-6 flex items-center justify-between">
             <div className="text-sm leading-5">
-                <Link to="/register" className="font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150">
+                <Link to="/register" className="font-medium text-orange-500 hover:text-orange-400 focus:outline-none focus:underline transition ease-in-out duration-150">
                   Not registered yet?
                 </Link>
               </div>
               <div className="text-sm leading-5">
-                <Link to="forgotpassword" className="font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150">
+                <Link to="forgotpassword" className="font-medium text-orange-500 hover:text-orange-400 focus:outline-none focus:underline transition ease-in-out duration-150">
                   Forgot your password?
                 </Link>
               </div>
@@ -135,7 +135,7 @@ const LoginPage = (props) => {
             {submitErrorMessage && <p className="text-red-500 text-xs italic mt-3">{submitErrorMessage}</p>}
             <div className="mt-6">
               <span className="block w-full rounded-md shadow-sm">
-                <button type="submit" className="w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out">
+                <button type="submit" className="w-full inline-flex items-center justify-center mt-12 px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-orange-300 hover:bg-orange-400 focus:outline-none focus:border-orange-600 focus:shadow-outline-orange active:bg-orange-600 transition ease-in-out duration-150">
                   Login
                   {loading 
                     ? (

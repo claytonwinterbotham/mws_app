@@ -20,14 +20,13 @@ export const Navbar = ({ fixed }) => {
 
   return (
     <>
-      <nav className="w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-teal-100">
+      <nav className="w-full flex border-b border-gray-200 flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
         <div className="container px-4 mx-auto flex items-center justify-between">
-          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+          <div className="w-full relative flex items-center justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link
-              className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
               to="/"
             >
-              My Whole Self
+            <img className="mx-auto h-8 w-auto" src="https://res.cloudinary.com/dy3c6sc72/image/upload/v1602530946/my_whole_self/mhs_logo_kjmhdf.svg" alt="Workflow" />
             </Link>
           </div>
           <div
@@ -53,20 +52,20 @@ export const Navbar = ({ fixed }) => {
                         </li>
                         <li className="nav-item">
                             <button
-                                className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                                className="px-3 py-2 flex items-center text-s font-bold leading-snug hover:opacity-75"
                                 onClick={logOut}
                             >
-                            <FontAwesomeIcon className="text-lg leading-lg text-white opacity-75" icon={faSignOut} /><span className="ml-2">Logout</span>
+                            <FontAwesomeIcon className="text-lg leading-lg opacity-75" icon={faSignOut} /><span className="ml-2">Logout</span>
                             </button>
                         </li>
                     </>
                 ) : (
                     <li className="nav-item">
                         <Link
-                        className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                        className="px-3 py-2 flex items-center text-s font-bold font-bold leading-snug hover:opacity-75"
                         to="/login"
                         >
-                        <FontAwesomeIcon className="text-lg leading-lg text-white opacity-75" icon={faSignIn} /><span className="ml-2">Login</span>
+                        <FontAwesomeIcon className="text-lg leading-lg opacity-75" icon={faSignIn} /><span className="ml-2">Login</span>
                         </Link>
                     </li>
                 )

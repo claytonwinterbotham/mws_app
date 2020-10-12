@@ -47,7 +47,7 @@ const AddPost = ({ category, start, user, toggleModal, toggleMobilePostForm }) =
             </h3>
             <p className="mt-1 text-sm leading-5 text-gray-500">
               Please share a thought, idea, or resource for the{" "} 
-              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-sm font-medium leading-5 bg-indigo-100 text-indigo-800">
+              <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-sm font-medium leading-5 ${helpers.setCategoryColor(category)}`}>
                     {helpers.capitalize(category)}
               </span> category.
             </p>
@@ -126,7 +126,7 @@ const AddPost = ({ category, start, user, toggleModal, toggleMobilePostForm }) =
             </button>
           </span>
           <span className="ml-3 inline-flex rounded-md shadow-sm">
-            <button type="submit" className="inline-flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out">
+            <button type="submit" className="inline-flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-orange-300 hover:bg-orange-400 focus:outline-none focus:border-orange-600 focus:shadow-outline-orange active:bg-orange-600 transition duration-150 ease-in-out">
               {addPostInfo.isLoading 
                 ? 'Saving...'
                 : addPostInfo.isError

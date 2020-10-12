@@ -71,7 +71,7 @@ const PostItem = ({post, favPosts, category, start}) => {
         <div className="border-b-2 border-gray-100 py-5">
             <div className="flex justify-between">
                 <div>
-                    <span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium leading-5 bg-indigo-100 text-indigo-800">
+                    <span className={`inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium leading-5 ${helpers.setCategoryColor(post.category)}`}>
                         {helpers.capitalize(post.category)}
                     </span>
                 </div>
