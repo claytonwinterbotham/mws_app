@@ -66,7 +66,7 @@ const App = () => {
           </Switch>
         </div>
         <Footer />
-        <ReactQueryDevtools />
+        {/* <ReactQueryDevtools /> */}
       </BrowserRouter>
     </AuthContext.Provider>
   );
