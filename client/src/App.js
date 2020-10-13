@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { AuthContext } from './_context/auth'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import { PrivateRoute, Navbar, Footer } from './_components'
+import { PrivateRoute, Navbar, Footer, ScrollToTop } from './_components'
 import HomePage from './HomePage'
 import RegisterPage from './RegisterPage'
 import LoginPage from './LoginPage'
@@ -49,6 +49,7 @@ const App = () => {
     <AuthContext.Provider value={{ authUser, setAuthUser, loadingAuthUser, setLoadingAuthUser }}>
       <BrowserRouter>
         <Navbar />
+        <ScrollToTop />
         <div className="">
           <Switch>
             <Route path="/" exact component={HomePage} />

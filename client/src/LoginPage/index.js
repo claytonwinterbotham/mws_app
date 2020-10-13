@@ -44,7 +44,7 @@ const LoginPage = (props) => {
         reset()
         setAuthUser(response.user)
         setLoading(false)
-        props.history.push('/profile')
+        props.history.push('/')
       })
       .catch((error) => {
         const errorMessage = error.response.data.error
@@ -65,7 +65,7 @@ const LoginPage = (props) => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <img className="mx-auto h-12 w-auto" src="https://res.cloudinary.com/dy3c6sc72/image/upload/v1602532535/my_whole_self/logo_no_text_mtojk1.svg" alt="Workflow" />
+        <img className="mx-auto h-12 w-auto" src="https://res.cloudinary.com/dy3c6sc72/image/upload/v1602630842/my_whole_self/logo_no_text_zlwevg.svg" alt="Workflow" />
         <h2 className="mt-6 text-center text-3xl leading-9 font-extrabold text-gray-900">
           Login
         </h2>
@@ -139,7 +139,7 @@ const LoginPage = (props) => {
                   Login
                   {loading 
                     ? (
-                    <FontAwesomeIcon className="ml-3 -mr-1 h-5 w-5" icon={faSpinner} color="#63b3ed" spin />
+                    <FontAwesomeIcon className="ml-3 -mr-1 h-5 w-5" icon={faSpinner} color="#FFFFFF" spin />
                   ) :
                     <div className="ml-3 -mr-1 h-5 w-5">
                     </div>
