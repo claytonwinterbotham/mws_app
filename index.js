@@ -4,7 +4,7 @@ const path = require('path')
 const bodyParser = require('body-parser')
 const axios = require('axios')
 const app = express()
-const port = process.env.port || 5000
+const port = process.env.PORT || 5000
 const cookieParser = require('cookie-parser')
 const session = require('cookie-session')
 const { response } = require('express')
@@ -366,4 +366,4 @@ app.get('*', (req, res) => {
 })
 
 /* FINISH SETUP */
-app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
+app.listen(port, () => console.log(`listening at http://localhost:${port}`))
